@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
 }
+.navbar ul{
+    margin-top: 25px;
+}
 
 #logo img {
     margin: -56px 10px;
@@ -11,7 +14,7 @@
 }
 
 .item{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .item a{
