@@ -9,7 +9,7 @@ html{
 
 /* CSS Variables */
 :root{
-    --navbar-height: 55px;
+    --navbar-height: 75px;
 }
 
 /* Navigation Bar */
@@ -81,7 +81,7 @@ html{
     background-size: cover;
     height: calc(100% + var(--navbar-height));
     /* top: - var(--navbar-height); */
-    top: -55px;
+    top: -75px;
     width: 100%;
     position: absolute;
     z-index: -1;
