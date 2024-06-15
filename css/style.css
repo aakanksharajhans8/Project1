@@ -1,0 +1,221 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 55px;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    /* position: relative; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: var(--navbar-height);
+    z-index: 10;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo & image */
+#logo{
+    margin: 0px 0px;
+}
+#logo img{
+    margin: 0px 10px;
+    height: 55px;
+}
+/* Navigation Bar: List styling */
+.navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai';
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.navbar ul li a{
+    padding: 0px 12px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    padding-top: 55px;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    position: relative;
+}
+#home::before{
+    content: "";
+    background-image: url("../images/photo2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% + var(--navbar-height));
+    /* top: - var(--navbar-height); */
+    top: -55px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.75;
+}
+#home h1{
+    text-align: center;
+    font-family: "Bree Serif", serif;
+}
+#home p{
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Bree Serif", serif;
+}
+.btn{
+    padding: 5px 20px;
+    margin: 15px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold ;
+    background-color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    margin: 15px;
+}
+#services .box{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0px 6px;
+    padding: 12px 12px;
+    background-color: #f2f2f2;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: "Bree Serif", serif;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    background-image: url("../images/photo4.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url("../photo4.jpg") no-repeat center center/cover ; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 0px 0px;
+}
+#clients img{
+    height: 100px;
+}
+
+/* Contact Section */
+#contact {
+    margin: 0px 6px;
+    margin-top: 20px;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url("../images/photo1.jpg") no-repeat center center/cover ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input , #contact-box textarea {
+    display: block;
+    width: 125%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+}
+
+/* Footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 2rem;
+    padding: 0px;
+    margin: 10px;
+    font-family: "Bree Serif", serif;
+}
+.h-secondary{
+    font-size: 1.2rem;
+    padding: 22px;
+    font-family: "Bree Serif", serif;
+}
+.center{
+    text-align: center;
+}
